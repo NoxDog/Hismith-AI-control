@@ -4,23 +4,33 @@ This project turns your Hismith sex machine into an adaptive, intelligent partne
 
 How It Works
 Q‑Learning Agent – an AI that learns which patterns you like (good 👍) or dislike (bad 👎) via keyboard presses.
+
 Ollama LLM – a free, local AI that creates new patterns when the agent stagnates (no improvement for several cycles).
+
 Smooth & Safe – a warm‑up period (2 minutes at the softest setting), gradual speed increases (capped at +15 base per cycle), and immediate stop on a “bad” press.
+
 Real‑time Feedback – press g (good) or b (bad) at any moment. A b press instantly stops the current pattern and switches to the softest one.
-Setup Guide
-What You Need
-Component	Requirement
+
+Setup Guide - What You Need
+Component                             	Requirement
 Hismith machine	With a compatible controller (Bluetooth / USB / wired).
+
 Computer	Windows (tested); Linux/Mac may need adjustments.
+
 Buttplug.io	Download & install the Intiface Desktop (server) from intiface.com.
+
 Python 3.9+	Install from python.org. Add to PATH.
+
 Ollama	Free, open‑source LLM runner. Download from ollama.com.
+
 Storage	A model like phi4 (2.5 GB) – you can store it on a different drive (see below).
+
 1. Install Buttplug.io (Intiface)
 Download & install Intiface Desktop.
 Run it and start the server (default port 12345).
 Keep it running while using the script.
-2. Install Python Libraries
+
+3. Install Python Libraries
 Open a Command Prompt as Administrator and run:
 
 pip install buttplug numpy requests keyboard
