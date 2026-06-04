@@ -78,4 +78,5 @@ The AI is not sentient – it only selects patterns based on your feedback.
 Patterns are generated locally – no data leaves your computer.
 
 Get Involved
+
 This is an open project. You can adapt the script, add new features (like webcam motion tracking, voice control, or sensor integration), and share your improvements. The code is provided as‑is – feel free to experiment!
