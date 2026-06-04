@@ -52,20 +52,30 @@ Press b to instantly stop a bad pattern and go back to the softest.
 Press Ctrl+C to quit.
 
 Customization Tips
-Parameter	Recommended Value	Purpose
-WARMUP_DURATION	120 (seconds)	How long the machine stays at its softest. Increase for longer warm‑up.
-MAX_SPEED_INCREASE_PER_STEP	15	Prevents sudden jumps. Lower = slower build.
-LLM_MODEL	phi4:latest or gemma3:2b	Which AI model to use for pattern generation. phi4 is balanced; gemma3:2b is smaller.
-SCENARIO_DURATION	10	Seconds each pattern runs before the AI decides the next one.
+Parameter  	     Recommended          Value  	                              Purpose  
+WARMUP_DURATION |	120 (seconds) |	How long the machine stays at its softest. Increase for longer warm‑up.
+
+MAX_SPEED_INCREASE_PER_STEP |	15 |	Prevents sudden jumps. Lower = slower build. 
+
+LLM_MODEL	| phi4:latest or gemma3:2b |	Which AI model to use for pattern generation. phi4 is balanced; gemma3:2b is smaller.
+
+SCENARIO_DURATION	| 10 |	Seconds each pattern runs before the AI decides the next one.
+
 Troubleshooting
+
 No key presses registered – Focus the terminal window. If msvcrt fails, install keyboard (pip install keyboard as admin).
+
 Ollama not responding – Make sure Ollama is running (check system tray). Run ollama list to see if model is downloaded.
+
 Buttplug connection fails – Ensure Intiface Desktop is running and the Hismith is paired. Try restarting Intiface.
+
 Stuck on “Connecting…” – Check machine batteries, Bluetooth, or USB connection.
+
 Safety & Ethics
 This is a self‑built experimental tool. Use at your own risk.
 Always keep a physical emergency stop (power switch) nearby.
 The AI is not sentient – it only selects patterns based on your feedback.
 Patterns are generated locally – no data leaves your computer.
+
 Get Involved
 This is an open project. You can adapt the script, add new features (like webcam motion tracking, voice control, or sensor integration), and share your improvements. The code is provided as‑is – feel free to experiment!
